@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset=utf-8>
-        <title id=title>PPC POS Calculator</title>
+        <title id=title>SHND POS Calculator</title>
         <link rel=icon href="https://peercoin.net/favicon.ico">
         <style>
         /* CSS based on peercoin.net by super3 and other contributors */
@@ -60,15 +60,15 @@
                     -->
                 </section>
 
-                <h1 id="header_title">Peercoin Proof-Of-Stake (POS) Calculator v1.0</h1>
+                <h1 id="header_title">Stronghands Proof-Of-Stake (POS) Calculator v1.0</h1>
 
             </header>
             <article id="content">
-                <p id="intro">This tool does only one thing but it does it well: calculate probability to generate a POS Peercoin block. You can adjust:</p>
+                <p id="intro">This tool does only one thing but it does it well: calculate probability to generate a POS Stronghands block. You can adjust:</p>
                 <ul>
                     <li id="desc1">The amount of coins you sent in a transaction</li>
                     <li id="desc2">The number of days that have passed. The probability of minting is null before 30 days and reaches its maximum after 90 days and doesn't increase after that.</li>
-                    <li id="desc3">The POS difficulty to get a readout. At launch, tool gets the last value for POS difficulty directly from the Peercoin blockchain.</li>
+                    <li id="desc3">The POS difficulty to get a readout. At launch, tool gets the last value for POS difficulty directly from the Stronghands blockchain.</li>
                 </ul>
                 <br>
                 <table>
@@ -126,7 +126,7 @@
 
         <noscript>
             <section id=noscript>
-                <p id="noscript-text">Peercoin POS Calculator requires JavaScript. Please enable it in your browser and refresh.</p>
+                <p id="noscript-text">Stronghands POS Calculator requires JavaScript. Please enable it in your browser and refresh.</p>
             </section>
         </noscript>
 
@@ -221,11 +221,11 @@
                 var rewardBlock90d = calculateReward(parseFloat(Days) + 90, coinValue);
                 var rewardBlockYear = calculateReward(parseFloat(Days) + 365, coinValue);
 
-                document.getElementById('rewardNextBlock').innerHTML = toFixed(rewardNextBlock, 2) + ' PPC';
-                document.getElementById('rewardBlockToday').innerHTML = toFixed(rewardBlockToday, 2) + ' PPC';
-                document.getElementById('rewardBlock31d').innerHTML = toFixed(rewardBlock31d, 2) + ' PPC';
-                document.getElementById('rewardBlock90d').innerHTML = toFixed(rewardBlock90d, 2) + ' PPC';
-                document.getElementById('rewardBlockYear').innerHTML = toFixed(rewardBlockYear, 2) + ' PPC';
+                document.getElementById('rewardNextBlock').innerHTML = toFixed(rewardNextBlock, 2) + ' SHND';
+                document.getElementById('rewardBlockToday').innerHTML = toFixed(rewardBlockToday, 2) + ' SHND';
+                document.getElementById('rewardBlock31d').innerHTML = toFixed(rewardBlock31d, 2) + ' SHND';
+                document.getElementById('rewardBlock90d').innerHTML = toFixed(rewardBlock90d, 2) + ' SHND';
+                document.getElementById('rewardBlockYear').innerHTML = toFixed(rewardBlockYear, 2) + ' SHND';
             };
 
             var translate_page = function(lang) {

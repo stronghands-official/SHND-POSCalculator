@@ -260,7 +260,7 @@
             run();
 
             $.ajax({
-                url: "https://shndexplorer.xyz/api/getdifficulty",
+                url: "https://www.coinexplorer.net/api/v1/SHND/block/latest",
                 dataType: "json",
                 success: function( response ) {
                     difficultyInput.value = response["proof-of-stake"];
